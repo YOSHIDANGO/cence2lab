@@ -38,10 +38,10 @@ function renderExtra(extra) {
   if (extra.type === "gif") {
     return `
       <div class="gallery workExtra">
-        <p class="gallery__title">${extra.title || "GIF PREVIEW"}</p>
+        <p class="gallery__title">${extra.title || "IMAGE ANIME"}</p>
         <div class="gallery__strip">
           <figure class="shot">
-            <img src="${extra.image}" alt="${extra.title || "GIF PREVIEW"}" loading="lazy" data-lightbox>
+            <img src="${extra.image}" alt="${extra.title || "IMAGE ANIME"}" loading="lazy" data-lightbox>
           </figure>
         </div>
         <p class="work__desc">${extra.lead || ""}</p>
