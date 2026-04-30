@@ -34,7 +34,7 @@ const WORKS = [
     "category": "game",
     "title": "ゾンビだらけの街だけど、ウチはまだ死ぬ気ない",
     "catch": "ゾンビベルトスクロールアクション",
-    "description": "ギャルJKがゾンビだらけの学校と街を突破するベルトスクロール型アクション。通常戦闘、血の雨、アイテム、スコア演出などを入れたテンポ重視の作品。",
+    "description": "ギャルJKがゾンビだらけの学校と街を突破するベルトスクロール型アクション。通常戦闘、ランダムイベント、アイテム、スコア演出などを入れたテンポ重視の作品。",
     "thumbnail": "./assets/images/works/zombie-belt-action/icon.jpg",
     "screenshots": [
       "./assets/images/works/zombie-belt-action/screenshots/image_1.png",
@@ -77,16 +77,16 @@ const WORKS = [
   {
     "id": "gal-horror",
     "category": "game",
-    "title": "彼女の秘密",
+    "title": "カノジョの秘密",
     "catch": "かわいい部屋に、少しずつ混ざる違和感に気づけるか",
-    "description": "ギャルゲーのUIとホラー演出を混ぜた選択式の作品。日常っぽい部屋、気づかれ度、選択肢、徐々に進む真相を見せる方向で作っている。",
+    "description": "マルチエンディングで、カノジョがどうなるかはあなたの選択次第。",
     "thumbnail": "./assets/images/works/gal-horror/icon.jpg",
     "screenshots": [
       "./assets/images/works/gal-horror/screenshots/shot-01.jpg",
       "./assets/images/works/gal-horror/screenshots/shot-02.jpg",
       "./assets/images/works/gal-horror/screenshots/shot-03.jpg"
     ],
-    "status": "HORROR",
+    "status": "HORROR?",
     "accent": "pink",
     "tags": [
       "Gal Game",
