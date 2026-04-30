@@ -20,8 +20,8 @@ const WORKS = [
     ],
     "links": [
       {
-        "label": "APK置き場",
-        "url": "./downloads/s-assistant/"
+        "label": "APK(準備中)",
+        "url": "#"
       },
       {
         "label": "制作ログ",
@@ -55,10 +55,21 @@ const WORKS = [
         "url": "https://zb-dieyet.vercel.app/"
       },
       {
-        "label": "APK置き場",
+        "label": "APK",
         "url": "https://zb-dieyet.vercel.app/dieyet.apk"
       }
+    ],
+    "extra": {
+    "type": "manga",
+    "title": "STORY",
+    "lead": "放課後に寝ていた主人公が目を覚ますと、学校はゾンビだらけになっていた。",
+    "images": [
+        "./assets/images/works/zombie-belt-action/intro-manga/page-01.jpg",
+        "./assets/images/works/zombie-belt-action/intro-manga/page-02.jpg",
+        "./assets/images/works/zombie-belt-action/intro-manga/page-03.jpg",
+        "./assets/images/works/zombie-belt-action/intro-manga/page-04.jpg"
     ]
+    }
   },
   {
     "id": "gal-horror",
@@ -86,10 +97,16 @@ const WORKS = [
         "url": "https://hs-xi.vercel.app/"
       },
       {
-        "label": "APK置き場",
+        "label": "APK",
         "url": "https://hs-xi.vercel.app/HS.apk"
       }
-    ]
+    ],
+    "extra": {
+        "type": "gif",
+        "title": "",
+        "lead": "覗き穴越しに見える違和感。彼女の秘密を見つけられるか",
+        "image": "./assets/images/works/gal-horror/gallery/peek.gif"
+    }
   },
   {
     "id": "rhythm-game",
@@ -112,12 +129,12 @@ const WORKS = [
     ],
     "links": [
       {
-        "label": "Web版",
-        "url": "./downloads/rhythm-game/"
+        "label": "APK(準備中)",
+        "url": "#"
       },
       {
-        "label": "楽曲置き場",
-        "url": "./downloads/rhythm-game/"
+        "label": "楽曲置き場(YouTubeリンク)",
+        "url": "https://www.youtube.com/@cence2728"
       }
     ]
   },
@@ -125,8 +142,8 @@ const WORKS = [
     "id": "cabaret-rpg",
     "category": "game",
     "title": "キャバ嬢RPG",
-    "catch": "夜の街で育成して、戦うRPG",
-    "description": "雪のススキノ風の夜街を舞台に、キャスト育成と会話バトルを組み合わせたRPG。店外マップ、会話バトル、キャスト同士の対決を見せ場にしている。",
+    "catch": "夜の街で戦ってして、ナンバー1を目指すRPG",
+    "description": "ススキノ風の繫華街を舞台に、キャスト育成と会話バトルを組み合わせたRPG。接客バトルで指名を増やして、キャスト同士の対決を見せ場にしている。",
     "thumbnail": "./assets/images/works/cabaret-rpg/icon.jpg",
     "screenshots": [
       "./assets/images/works/cabaret-rpg/screenshots/shot-01.jpg",
@@ -147,28 +164,5 @@ const WORKS = [
         "url": "https://gn-blond.vercel.app/"
       }
     ]
-  }
-];
-const FEATURE_SECTIONS = [
-  {
-    "id": "zombie-intro",
-    "type": "manga",
-    "title": "ゾンビ導入漫画",
-    "lead": "放課後に寝ていたギャルJKが目を覚ますと、学校はゾンビだらけになっていた。",
-    "workId": "zombie-belt-action",
-    "images": [
-      "./assets/images/works/zombie-belt-action/intro-manga/page-01.jpg",
-      "./assets/images/works/zombie-belt-action/intro-manga/page-02.jpg",
-      "./assets/images/works/zombie-belt-action/intro-manga/page-03.jpg",
-      "./assets/images/works/zombie-belt-action/intro-manga/page-04.jpg"
-    ]
-  },
-  {
-    "id": "gal-gif",
-    "type": "gif",
-    "title": "ギャルゲー風ホラー GIF",
-    "lead": "覗き穴越しに見える違和感。静止画より空気が伝わるので、トップに独立して置く。",
-    "workId": "gal-horror",
-    "image": "./assets/images/works/gal-horror/gallery/peek.gif"
   }
 ];
