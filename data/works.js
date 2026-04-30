@@ -32,11 +32,14 @@ const WORKS = [
   {
     "id": "zombie-belt-action",
     "category": "game",
-    "title": "ゾンビベルトスクロールアクション",
-    "catch": "ゾンビだらけの街だけど、ウチはまだ死ぬ気ない",
+    "title": "ゾンビだらけの街だけど、ウチはまだ死ぬ気ない",
+    "catch": "ゾンビベルトスクロールアクション",
     "description": "ギャルJKがゾンビだらけの学校と街を突破するベルトスクロール型アクション。通常戦闘、血の雨、アイテム、スコア演出などを入れたテンポ重視の作品。",
     "thumbnail": "./assets/images/works/zombie-belt-action/icon.jpg",
     "screenshots": [
+      "./assets/images/works/zombie-belt-action/screenshots/image_1.png",
+      "./assets/images/works/zombie-belt-action/screenshots/image_2.png",
+      "./assets/images/works/zombie-belt-action/screenshots/image_3.png",
       "./assets/images/works/zombie-belt-action/screenshots/shot-01.jpg",
       "./assets/images/works/zombie-belt-action/screenshots/shot-02.jpg",
       "./assets/images/works/zombie-belt-action/screenshots/shot-03.jpg"
@@ -74,8 +77,8 @@ const WORKS = [
   {
     "id": "gal-horror",
     "category": "game",
-    "title": "ギャルゲー風ホラー",
-    "catch": "かわいい部屋に、少しずつ違和感が混ざる",
+    "title": "彼女の秘密",
+    "catch": "かわいい部屋に、少しずつ混ざる違和感に気づけるか",
     "description": "ギャルゲーのUIとホラー演出を混ぜた選択式の作品。日常っぽい部屋、気づかれ度、選択肢、徐々に進む真相を見せる方向で作っている。",
     "thumbnail": "./assets/images/works/gal-horror/icon.jpg",
     "screenshots": [
@@ -111,8 +114,8 @@ const WORKS = [
   {
     "id": "rhythm-game",
     "category": "game",
-    "title": "オリジナル曲音ゲー",
-    "catch": "CENCEの曲で遊ぶネオン音ゲー",
+    "title": "CENCE BEATS CLUB",
+    "catch": "オリジナル曲で遊べる普通の音ゲー",
     "description": "オリジナル曲を使った音ゲー。曲選択、ジャケット、難易度、プレイ画面までネオン系でまとめ、音楽作品とゲーム作品を同じ棚に置けるようにしている。",
     "thumbnail": "./assets/images/works/rhythm-game/icon.jpg",
     "screenshots": [
@@ -141,8 +144,8 @@ const WORKS = [
   {
     "id": "cabaret-rpg",
     "category": "game",
-    "title": "キャバ嬢RPG",
-    "catch": "夜の街で戦ってして、ナンバー1を目指すRPG",
+    "title": "Glorious Night",
+    "catch": "夜の街でナンバー1を目指すRPG",
     "description": "ススキノ風の繫華街を舞台に、キャスト育成と会話バトルを組み合わせたRPG。接客バトルで指名を増やして、キャスト同士の対決を見せ場にしている。",
     "thumbnail": "./assets/images/works/cabaret-rpg/icon.jpg",
     "screenshots": [
