@@ -1,6 +1,115 @@
-const accentMap={cyan:"var(--cyan)",pink:"var(--pink)",purple:"var(--purple)",yellow:"var(--yellow)",red:"var(--red)",orange:"var(--orange)",green:"var(--green)"};
-const featureGrid=document.querySelector('#featureGrid');
-FEATURE_SECTIONS.forEach(feature=>{const section=document.createElement('article');section.className='feature';section.style.setProperty('--accent',feature.type==='manga'?'var(--red)':'var(--pink)'); if(feature.type==='manga'){section.innerHTML=`<h3>${feature.title}</h3><p>${feature.lead}</p><div class="mangaStrip">${feature.images.map((src,i)=>`<img src="${src}" alt="${feature.title} ${i+1}" loading="lazy" data-lightbox>`).join('')}</div>`;} else {section.innerHTML=`<h3>${feature.title}</h3><div class="gifBox"><img src="${feature.image}" alt="${feature.title}" loading="lazy" data-lightbox><p>${feature.lead}</p></div>`;} featureGrid.appendChild(section);});
-const workGrid=document.querySelector('#workGrid');
-WORKS.forEach(work=>{const article=document.createElement('article');article.className='work';article.style.setProperty('--accent',accentMap[work.accent]||'var(--cyan)');const tags=work.tags.map(tag=>`<span class="tag">${tag}</span>`).join('');const links=work.links.map(link=>`<a class="action" href="${link.url}">${link.label}</a>`).join('');const shots=(work.screenshots||[]).map((src,index)=>`<figure class="shot"><img src="${src}" alt="${work.title} スクリーンショット ${index+1}" loading="lazy" data-lightbox></figure>`).join('');article.innerHTML=`<div class="work__head"><div class="work__thumb" style="background-image:url('${work.thumbnail}')"></div><div class="work__body"><span class="status">${work.status}</span><h3>${work.title}</h3><p class="work__catch">${work.catch}</p><p class="work__desc">${work.description}</p><div class="tags">${tags}</div><div class="actions">${links}</div></div></div><div class="gallery"><p class="gallery__title">SCREENSHOTS</p><div class="gallery__strip">${shots}</div></div>`;workGrid.appendChild(article);});
-const lightbox=document.querySelector('#lightbox');const lightboxImage=document.querySelector('#lightboxImage');const closeButton=document.querySelector('.lightbox__close');document.addEventListener('click',event=>{const target=event.target;if(target&&target.matches('[data-lightbox]')){lightboxImage.src=target.src;lightboxImage.alt=target.alt||'';lightbox.classList.add('isOpen');lightbox.setAttribute('aria-hidden','false');}});function closeLightbox(){lightbox.classList.remove('isOpen');lightbox.setAttribute('aria-hidden','true');lightboxImage.src='';}closeButton.addEventListener('click',closeLightbox);lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeLightbox();});document.addEventListener('keydown',event=>{if(event.key==='Escape')closeLightbox();});
+const accentMap = {
+  cyan: "var(--cyan)",
+  pink: "var(--pink)",
+  purple: "var(--purple)",
+  yellow: "var(--yellow)",
+  red: "var(--red)",
+  orange: "var(--orange)",
+  green: "var(--green)"
+};
+
+const workGrid = document.querySelector("#workGrid");
+
+function renderExtra(extra) {
+  if (!extra) return "";
+
+  if (extra.type === "manga") {
+    const images = (extra.images || []).map((src, i) => `
+      <figure class="shot">
+        <img src="${src}" alt="${extra.title} ${i + 1}" loading="lazy" data-lightbox>
+      </figure>
+    `).join("");
+
+    return `
+      <div class="gallery workExtra">
+        <p class="gallery__title">${extra.title || "STORY"}</p>
+        <p class="work__desc">${extra.lead || ""}</p>
+        <div class="gallery__strip">${images}</div>
+      </div>
+    `;
+  }
+
+  if (extra.type === "gif") {
+    return `
+      <div class="gallery workExtra">
+        <p class="gallery__title">${extra.title || "GIF PREVIEW"}</p>
+        <div class="gallery__strip">
+          <figure class="shot">
+            <img src="${extra.image}" alt="${extra.title || "GIF PREVIEW"}" loading="lazy" data-lightbox>
+          </figure>
+        </div>
+        <p class="work__desc">${extra.lead || ""}</p>
+      </div>
+    `;
+  }
+
+  return "";
+}
+
+WORKS.forEach(work => {
+  const article = document.createElement("article");
+  article.className = "work";
+  article.style.setProperty("--accent", accentMap[work.accent] || "var(--cyan)");
+
+  const tags = (work.tags || []).map(tag => `<span class="tag">${tag}</span>`).join("");
+  const links = (work.links || []).map(link => `<a class="action" href="${link.url}">${link.label}</a>`).join("");
+  const shots = (work.screenshots || []).map((src, index) => `
+    <figure class="shot">
+      <img src="${src}" alt="${work.title} スクリーンショット ${index + 1}" loading="lazy" data-lightbox>
+    </figure>
+  `).join("");
+
+  article.innerHTML = `
+    <div class="work__head">
+      <div class="work__thumb" style="background-image:url('${work.thumbnail}')"></div>
+      <div class="work__body">
+        <span class="status">${work.status}</span>
+        <h3>${work.title}</h3>
+        <p class="work__catch">${work.catch}</p>
+        <p class="work__desc">${work.description}</p>
+        <div class="tags">${tags}</div>
+        <div class="actions">${links}</div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <p class="gallery__title">SCREENSHOTS</p>
+      <div class="gallery__strip">${shots}</div>
+    </div>
+
+    ${renderExtra(work.extra)}
+  `;
+
+  workGrid.appendChild(article);
+});
+
+const lightbox = document.querySelector("#lightbox");
+const lightboxImage = document.querySelector("#lightboxImage");
+const closeButton = document.querySelector(".lightbox__close");
+
+document.addEventListener("click", event => {
+  const target = event.target;
+
+  if (target && target.matches("[data-lightbox"])) {
+    lightboxImage.src = target.src;
+    lightboxImage.alt = target.alt || "";
+    lightbox.classList.add("isOpen");
+    lightbox.setAttribute("aria-hidden", "false");
+  }
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("isOpen");
+  lightbox.setAttribute("aria-hidden", "true");
+  lightboxImage.src = "";
+}
+
+closeButton.addEventListener("click", closeLightbox);
+
+lightbox.addEventListener("click", event => {
+  if (event.target === lightbox) closeLightbox();
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeLightbox();
+});
