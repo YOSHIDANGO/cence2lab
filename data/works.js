@@ -52,11 +52,11 @@ const WORKS = [
     "links": [
       {
         "label": "Web版",
-        "url": "./downloads/zombie-belt-action/"
+        "url": "https://zb-dieyet.vercel.app/"
       },
       {
         "label": "APK置き場",
-        "url": "./downloads/zombie-belt-action/"
+        "url": "https://zb-dieyet.vercel.app/dieyet.apk"
       }
     ]
   },
@@ -83,7 +83,11 @@ const WORKS = [
     "links": [
       {
         "label": "Web版",
-        "url": "./downloads/gal-horror/"
+        "url": "https://hs-xi.vercel.app/"
+      },
+      {
+        "label": "APK置き場",
+        "url": "https://hs-xi.vercel.app/HS.apk"
       }
     ]
   },
@@ -140,11 +144,7 @@ const WORKS = [
     "links": [
       {
         "label": "Web版",
-        "url": "./downloads/cabaret-rpg/"
-      },
-      {
-        "label": "APK置き場",
-        "url": "./downloads/cabaret-rpg/"
+        "url": "https://gn-blond.vercel.app/"
       }
     ]
   }
