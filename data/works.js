@@ -23,6 +23,29 @@ const WORKS = [
     ]
   },
   {
+    "id": "no-smoking-nisa",
+    "category": "webapp",
+    "title": "禁煙NISAシミュレーター",
+    "catch": "タバコ代を未来の資産に置き換える禁煙シミュレーター。",
+    "description": "喫煙本数やタバコ代から、禁煙で浮く金額とNISAで運用した場合の目安を見える化するWebツール。スマホのホーム画面から繰り返し使えるPWAとして、共有しやすい導線も入れています。",
+    "thumbnail": "./assets/images/works/no-smoking-nisa/icon.png",
+    "screenshots": [],
+    "status": "WEB TOOL",
+    "accent": "orange",
+    "tags": [
+      "NISA",
+      "Simulator",
+      "PWA",
+      "Share"
+    ],
+    "links": [
+      {
+        "label": "サイトを見る",
+        "url": "https://no-smoking-nisa.vercel.app/"
+      }
+    ]
+  },
+  {
     "id": "s-assistant",
     "category": "app",
     "title": "ローカルAI / S Assistant",
