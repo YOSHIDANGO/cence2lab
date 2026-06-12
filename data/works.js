@@ -1,5 +1,28 @@
 const WORKS = [
   {
+    "id": "nonexistent-photo-gallery",
+    "category": "website",
+    "title": "存在しない写真館",
+    "catch": "AIが「写真修復」として生成した、存在しない記録の保管庫。",
+    "description": "出典不明の写真をAIで補完・想像した架空の写真記録を収蔵しています。ご安心ください。閲覧注意の画像が多く存在しますが、一覧ではぼかし表示を施しております。皆様のご来館を心よりお待ちしております。",
+    "thumbnail": "./assets/images/works/nonexistent-photo-gallery/icon.png",
+    "screenshots": [],
+    "status": "閲覧注意 / WEBSITE",
+    "accent": "green",
+    "tags": [
+      "HP",
+      "閲覧注意",
+      "AI Photo",
+      "Archive"
+    ],
+    "links": [
+      {
+        "label": "HPを見る",
+        "url": "https://cf054658.cloudfree.jp/"
+      }
+    ]
+  },
+  {
     "id": "s-assistant",
     "category": "app",
     "title": "ローカルAI / S Assistant",

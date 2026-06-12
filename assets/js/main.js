@@ -73,6 +73,15 @@ function renderWork(work) {
     `;
   }).join("");
 
+  const gallery = shots ? `
+    <div class="gallery">
+      <p class="gallery__title">SCREENSHOTS</p>
+      <div class="gallery__strip">
+        ${shots}
+      </div>
+    </div>
+  ` : "";
+
   article.innerHTML = `
     <div class="work__head">
       <div class="work__thumb" style="background-image:url('${work.thumbnail}')"></div>
@@ -93,12 +102,7 @@ function renderWork(work) {
       </div>
     </div>
 
-    <div class="gallery">
-      <p class="gallery__title">SCREENSHOTS</p>
-      <div class="gallery__strip">
-        ${shots}
-      </div>
-    </div>
+    ${gallery}
 
     ${renderExtra(work.extra)}
   `;
