@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Placeholder icon for Pachislot Dieyet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#210909"/>
+      <stop offset="0.58" stop-color="#75151a"/>
+      <stop offset="1" stop-color="#edb72e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="150" y="95" width="900" height="710" rx="42" fill="#101116" stroke="#ffd94a" stroke-width="16"/>
+  <rect x="225" y="220" width="750" height="330" rx="24" fill="#f4eee0"/>
+  <g font-family="Arial, sans-serif" font-size="150" font-weight="700" text-anchor="middle">
+    <text x="350" y="435" fill="#c5262d">7</text>
+    <text x="600" y="435" fill="#1c7d45">Z</text>
+    <text x="850" y="435" fill="#c5262d">7</text>
+  </g>
+  <path d="M475 220v330M725 220v330" stroke="#101116" stroke-width="14"/>
+  <circle cx="600" cy="680" r="78" fill="#edb72e" stroke="#fff4c7" stroke-width="12"/>
+  <text x="600" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#fff4c7">PACHISLOT</text>
+</svg>

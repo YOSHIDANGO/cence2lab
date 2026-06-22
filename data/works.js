@@ -121,6 +121,29 @@ const WORKS = [
     }
   },
   {
+    "id": "pachislot-dieyet",
+    "category": "game",
+    "title": "パチスロ～ゾンビだらけの街だけど、ウチはまだ死ぬ気ない～",
+    "catch": "ゾンビだらけの街を舞台にしたパチスロゲーム。",
+    "description": "ベルトスクロールアクション『ゾンビだらけの街だけど、ウチはまだ死ぬ気ない』の世界をパチスロ化。ゾンビに囲まれた街で、リール演出とボーナスを楽しむ派生作品。",
+    "thumbnail": "./assets/images/works/pachislot-dieyet/icon.png",
+    "screenshots": [],
+    "status": "PACHISLOT",
+    "accent": "yellow",
+    "tags": [
+      "Pachislot",
+      "Zombie",
+      "Web Game",
+      "Spin"
+    ],
+    "links": [
+      {
+        "label": "Web版",
+        "url": "https://pachislotdieyet.vercel.app/"
+      }
+    ]
+  },
+  {
     "id": "gal-horror",
     "category": "game",
     "title": "カノジョの秘密",
