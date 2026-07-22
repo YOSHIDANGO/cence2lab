@@ -1,5 +1,28 @@
 const WORKS = [
   {
+    "id": "iburigakko-pairing-lab",
+    "category": "website",
+    "title": "いぶりがっこ×？？",
+    "catch": "今日のいぶりがっこの相棒をルーレットで決める味覚発見サイト。",
+    "description": "秋田の燻製漬物・いぶりがっこと相性のいい食材を、66種類の候補からランダムに抽選。王道から意外な一口まで、合う理由やおすすめの食べ方を見つけられる小さな味覚研究所です。",
+    "thumbnail": "./assets/images/works/iburigakko-pairing-lab/icon.png",
+    "screenshots": [],
+    "status": "研究所 / WEBSITE",
+    "accent": "yellow",
+    "tags": [
+      "HP",
+      "Iburigakko",
+      "Roulette",
+      "Food"
+    ],
+    "links": [
+      {
+        "label": "HPを見る",
+        "url": "https://cf054658.cloudfree.jp/gakko_lab/"
+      }
+    ]
+  },
+  {
     "id": "nonexistent-photo-gallery",
     "category": "website",
     "title": "存在しない写真館",
@@ -18,7 +41,7 @@ const WORKS = [
     "links": [
       {
         "label": "HPを見る",
-        "url": "https://cf054658.cloudfree.jp/"
+        "url": "https://cf054658.cloudfree.jp/non_exist/"
       }
     ]
   },

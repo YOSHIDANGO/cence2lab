@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">いぶりがっこ×？？ placeholder icon</title>
+  <desc id="desc">A temporary icon for the iburigakko pairing lab website.</desc>
+  <defs>
+    <radialGradient id="smoke" cx="50%" cy="36%" r="70%">
+      <stop offset="0%" stop-color="#ffe2a6"/>
+      <stop offset="48%" stop-color="#7c4322"/>
+      <stop offset="100%" stop-color="#17110d"/>
+    </radialGradient>
+    <linearGradient id="pickle" x1="16%" x2="86%" y1="18%" y2="82%">
+      <stop offset="0%" stop-color="#f0ba4f"/>
+      <stop offset="48%" stop-color="#9b5b21"/>
+      <stop offset="100%" stop-color="#4e2b14"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="72" fill="url(#smoke)"/>
+  <circle cx="392" cy="112" r="68" fill="#f5d070" opacity=".16"/>
+  <path d="M114 132c34-42 98-55 154-25 76 42 112 138 78 213-34 76-126 102-204 58-71-39-104-125-75-194 9-21 23-38 47-52Z" fill="url(#pickle)" stroke="#ffd27a" stroke-width="10"/>
+  <path d="M143 185c43 24 104 20 151-12M132 244c55 35 136 30 193-13M154 308c45 23 96 22 143-3" fill="none" stroke="#2b160c" stroke-width="14" stroke-linecap="round" opacity=".42"/>
+  <path d="M90 409c48-36 89-35 122 3 28 32 69 30 121-6 33-23 66-24 99-3" fill="none" stroke="#f7ead0" stroke-width="12" stroke-linecap="round" opacity=".52"/>
+  <text x="256" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#fff3cf">× ??</text>
+</svg>
