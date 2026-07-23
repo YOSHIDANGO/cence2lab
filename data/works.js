@@ -1,4 +1,27 @@
 const WORKS = [
+    {
+    "id": "honnin.inc",
+    "category": "website",
+    "title": "株式会社本人",
+    "catch": "本人でいられない日のための、架空の生活継続支援会社",
+    "description": "仕事、家庭、学校、社会関係。本人として生活を続けることが難しくなった人に代わり、専門スタッフがその役割を引き継ぐ架空企業サイトです。企業サイトの体裁で進む連作ストーリーと、読者自身を巻き込む仕掛けを組み合わせています。",
+    "thumbnail": "./assets/images/works/honnin.inc/icon.png",
+    "screenshots": [],
+    "status": "FICTION / WEBSITE",
+    "accent": "blue",
+    "tags": [
+        "WEB",
+        "NOVEL",
+        "SF",
+        "HORROR"
+    ],
+    "links": [
+        {
+        "label": "サイトを見る",
+        "url": "https://cf054658.cloudfree.jp/honnin.inc/"
+        }
+    ]
+    },
   {
     "id": "iburigakko-pairing-lab",
     "category": "website",
